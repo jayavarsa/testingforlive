@@ -1,14 +1,36 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+#header{
+    background-color: purple;
+    height: 50px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+.grid{
+    margin: 20px;
+    display: grid;
+/* the number rows and colums of the grid-template: */
+    grid-template-columns: repeat(3, 1fr); 
+    /* row and column gap  */
+    column-gap: 10px;
+    row-gap: 10px;
+}
+/* height and width to the images */
+img{
+    width:370px ;
+    height:200px ;
+}
+/* border for each grid */
 .image{
-    height: 100px;
-    width: 100px;
-}
-#c1{
-    display:grid;
-    grid-template-columns: 200px 200px 200px ;
-}
-.image1{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: 400px;
+    border: 5px solid red;
+    padding: 10px;
 }
